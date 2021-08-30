@@ -25,43 +25,28 @@ li {
 }
 
 a {
-  color: #656a6e;
-  background-color: #fff;
+  color: #656a6e;  
   text-decoration: none;
   font-weight: 400; 
-}
-
-.container {
-	width: 100%;
-    margin-top: -30px;
-    
-    
 }
 
 
 /* --------------------------
   Main Styles
 --------------------------- */
-.container,
+
 .main-header,
-.nav{
+.nav,
+.image-box,
+.head
+.portfolio, 
+.profile-image {
   display: flex;
   flex-direction: column;
 }
 
-.container p {      
-    text-align: center;
-    padding: 15px;
-}
-
-
-.main-header {
-  padding-top: 2em;
-  
-}
-
 .main-header h1 {      
-  align-self: center;
+  text-align: center;
 }
 
 
@@ -73,13 +58,14 @@ a {
 .nav a {
   display: block;
   color: #797e83;
-  font-size: 1.125em;
-  font-weight: 300;
+  font-size: 1.225em;
+  font-weight: 800;
   text-align: center;
   padding: .8em;
   margin-top: 5px;
   margin-left:18px ;
   margin-right:18px ;
+  text-transform: uppercase;
   
 }
 
@@ -89,9 +75,71 @@ a {
   
 }
 
+.image-box p {      
+    text-align: center;
+    font-size:1.525em ;
+    padding: 15px;
+}
+
 .profile-image {    
     align-self: center;
+    width: 280px;
   }
+
+
+.portfolio{
+    margin-top: 60px;
+}
+
+
+.portfolio h1 {      
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-size:1.425em ;
+  }
+
+.portfolio img{
+      width: 90vw;
+  }
+
+.portfolio h2{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.portfolio p{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.contact {
+    margin: 15px;
+
+}
+
+
+.contact p{
+    font-size:1.525em ;
+}
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+
+footer h1{
+    font-size:1.225em ;
+}
+
+
+
 
 
 /* --------------------------
@@ -99,53 +147,50 @@ a {
 --------------------------- */
 
 
-@media (min-width: 769px) {
-
-    .main-content {
-		margin-top: 4em;
-	}
-	p {
-		-webkit-column-count: 2;
-		-webkit-column-gap: 2.5em;
-	
-		-moz-column-count: 2;
-		-moz-column-gap: 2.5em;
-	
-		column-count: 2;
-		column-gap: 2.5em;
-	}
 
 
 
-  .main-header {
-    height: 200px;
-    justify-content: flex-end;
-  }
+@media (min-width: 1024px) {
+    
 
-
-
-  .nav {
-    margin-top: 3em;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .nav a{
-    border-bottom-color: transparent ;
-  }
-  
-}
-
-
-@media (min-width: 1025px) {
     .main-header {
-      flex-direction: row;
+        background-color: yellow;
+        width: 90%;
+
+    }   
+    .head, .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+    }
+
+    .image-box{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center; 
+        
+        
 
     }
-    .site-logo{
-      margin-right: auto;
-    }
 
+
+    .profile-image { 
+        
+        width: 580px;
+      }
+
+    /*.main-header {
+        flex-direction: column;
+  
+      }
+    .
+    
+    
+   
+    /*
     .nav {
       margin-top: 0;
       align-self: center;
@@ -154,16 +199,9 @@ a {
     .nav li{
       margin-left: .65em;
       margin-left: .65em;
-    }
+    }*/
 
 }
 
 
 
-
-
-@media (min-width: 1200px) {
-	.container {
-		width: 1080px;
-	}
-}
